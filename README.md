@@ -14,5 +14,5 @@
 ## Как запустить
 1. Клонируйте репозиторий:
    ```bash
-   git clone [https://github.com/OlgaNikonorova/NekoInn.git]
+   git clone https://github.com/OlgaNikonorova/NekoInn.git
 2. Откройте index.html в браузере.
