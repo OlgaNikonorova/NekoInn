@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en" theme="night">
+  <head>
+    <script src="./scripts/themeToggle.js" defer></script>
+    <script src="./scripts/events.js" defer></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./styles/styles.css" rel="stylesheet" />
+    <title>NekoInn</title>
+  </head>
+
+  <body>
+    <nav class="navigation">
+      <a class="navigation__logo" href="index.html">
+        <img
+          class="navigation__logo-img"
+          alt="nav-logo"
+          src="./assets/navigation__logo--night.svg"
+        />
+      </a>
+
+      <button class="navigation__hamburger-button">
+        <img
+          src="./assets/navigation__hamburger-icon.svg"
+        />
+      </button>  
+
+      <div class="navigation__menu-wrapper">
+        <div class="navigation__links">
+          <a href="#" class="navigation__link" data-target=".about-us">About Us</a>
+          <a href="#" class="navigation__link" data-target=".rooms">Our Rooms</a>
+          <a href="#" class="navigation__link" data-target=".purr-care">Purr Care</a>
+          <a href="#" class="navigation__link" data-target=".testimonial">Testimonial</a>
+        </div>
+        
+            <div class="navigation__theme-switch">
+              <input type="checkbox" id="navigation__theme-checkbox" />
+              <label
+                for="navigation__theme-checkbox"
+                class="navigation__theme-slider-wrapper"
+              >
+
+              <svg
+                class="navigation__theme-toggle-icon navigation__theme-toggle-icon--night"
+                width="24"
+                height="25"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0.875 18.9583C11.1464 21.0478 18.5487 8.31209 11.2083 0.875C17.6676 1.04478 22.8333 6.18567 22.8333 12.5C22.8333 18.9215 17.8202 24.125 11.2083 24.125C7.03768 24.125 3.01836 22.0995 0.875 18.9583Z"
+                  stroke-width="1.5"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <svg
+                class="navigation__theme-toggle-icon navigation__theme-toggle-icon--day"
+                width="26"
+                height="26"
+                viewBox="0 0 26 26"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M1 13H3.66667M3.66675 22.3333L6.33341 19.6667M13 22.3333V25M19.6667 19.6667L22.3333 22.3333M3.66667 3.66667L6.33333 6.33333M22.3333 13H25M19.6666 6.33333L22.3333 3.66667M13 1V3.66667M17 13C17 15.2091 15.2091 17 13 17C10.7909 17 9 15.2091 9 13C9 10.7909 10.7909 9 13 9C15.2091 9 17 10.7909 17 13Z"
+                  stroke-width="1.5"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <span class="navigation__theme-slider"></span>
+            </label>
+          </div>
+
+          <button
+            class="navigation__book-button" data-target=".booking"
+          >
+            BOOK NOW
+          </button>
+
+          <button
+            class="navigation__menu-close-button"
+          >
+          <img src="./assets/navigation__menu-close-icon.svg">
+          </button>
+
+        </div>
+      </div>
+    </nav>
+
+    
+      <div class="hero">
+        <div class="hero__welcome-info">
+          <h6>WHERE FELINE COMFORT COMES FIRST</h6>
+          <h1>Your 5 Stars Purr Inn</h1>
+          <p>
+            At NekoInn, we understand that your beloved feline companion
+            deserves the best care, even when you can't be there. That's why
+            we've created a haven designed specifically for cats, where every
+            whisker is cherished and every purr is celebrated. From cozy
+            accommodations to personalized attention, we strive to provclasse a
+            nurturing environment where your cat can relax, play, and thrive
+            while you're away. Welcome to NekoInn, where your cat's comfort and
+            happiness are our top priorities.
+          </p>
+          <button class="hero__welcome-info-button">BOOK A PURR-SUITE</button>
+
+          <div class="hero__welcome-info-video">
+            <h6>WATCH NOW</h6>
+            <p>Introducing The NekoInn</p>
+            <button class="hero__welcome-info-video-button">
+              <img src="./assets/hero__welcome-info-video-button-icon.svg" />
+            </button>
+          </div>
+        </div>
+
+        <div class="hero__welcome-cats">
+          <img
+            class="hero__welcome-cats-vector-circle--1 vector-circle"
+            src="./assets/vector-circle.svg"
+          />
+
+          <img
+            class="hero__welcome-cats-vector-circle--2 vector-circle"
+            src="./assets/vector-circle.svg"
+          />
+
+          <img
+            class="hero__welcome-cat--primary"
+            src="./assets/hero__welcome-cat--primary.png"
+          />
+
+          <img
+            class="hero__welcome-cat--secondary hero__welcome-cat--secondary-1"
+            src="./assets/hero__welcome-cat--secondary-1.png"
+          />
+          <img
+            class="hero__welcome-cat--secondary hero__welcome-cat--secondary-2"
+            src="./assets/hero__welcome-cat--secondary-2.png"
+          />
+          <img
+            class="hero__welcome-cat--secondary hero__welcome-cat--secondary-3"
+            src="./assets/hero__welcome-cat--secondary-3.png"
+          />
+          <img
+            class="hero__welcome-cat--secondary hero__welcome-cat--secondary-4"
+            src="./assets/hero__welcome-cat--secondary-4.png"
+          />
+        </div>
+      </div>
+
+      <main id="main">
+      <div class="info">
+        <div class="info__block">
+          <div class="info__icon">
+            <img src="./assets/info__place-icon.svg" />
+          </div>
+          <div class="info__text">
+            <h5>123 Meow Avenue.</h5>
+            <h5>Kittyville, CA 90210 United States</h5>
+          </div>
+        </div>
+
+        <div class="info__block">
+          <div class="info__icon">
+            <img src="./assets/info__phone-icon.svg" />
+          </div>
+          <div class="info__text">
+            <h5>(555) 555-5555</h5>
+          </div>
+        </div>
+
+        <div class="info__block">
+          <div class="info__icon">
+            <img src="./assets/info__email-icon.svg" />
+          </div>
+          <div class="info__text">
+            <h5>info@neko-inn.com</h5>
+          </div>
+        </div>
+        <div class="info__bar"></div>
+      </div>
+
+      <div class="about-us">
+        <div class="about-us__text">
+          <h6>YOUR TRUSTED CAT RETREAT</h6>
+          <h3>About NekoInn</h3>
+          <p>
+            NekoInn is more than a cat boarding facility; it's a home away from
+            home for your furry family members. Nestled in serene surroundings,
+            our inn offers a tranquil retreat for cats of all shapes, sizes, and
+            personalities. With a team of dedicated caregivers passionate about
+            feline welfare, we ensure every guest receives love, attention, and
+            comfort. Rest easy knowing your cat is in caring hands at NekoInn.
+          </p>
+          <button
+            class="about-us__text-button"
+            onclick="document.querySelector('.booking').scrollIntoView()"
+          >
+            BOOK NOW
+          </button>
+        </div>
+
+        <div class="about-us__image">
+          <img
+            class="secondary-image vector-circle"
+            src="./assets/vector-circle.svg"
+          />
+          <img
+            class="about-us__cat-image primary-image"
+            src="./assets/about__image.png"
+          />
+        </div>
+      </div>
+
+      <div class="rooms">
+        <div class="rooms__image-wrapper">
+        <img class="rooms__image" src="./assets/rooms__image.png" />
+        </div>  
+
+        <div class="rooms__text-wrapper">
+          <h6>PERFECTLY TAILORED FOR YOUR FELINE FRIEND</h6>
+          <h3>Our Rooms</h3>
+          <ul class="rooms__text-list">
+            <li class="rooms__text-list-element">
+              <button class="rooms__text-list-element-button">
+                <img
+                  class="rooms__text-list-element-button-image--up"
+                  src="./assets/rooms__button-up.svg"
+                />
+              </button>
+              <h5>Cozy Corners: Where Comfort Meets Contentment</h5>
+              <p class="rooms__text">
+                NekoInn is more than a cat boarding facility; it's a home away
+                from home for your furry family members. Nestled in serene
+                surroundings, our inn offers a tranquil retreat for cats of all
+                shapes, sizes, and personalities. With a team of dedicated
+                caregivers passionate about feline welfare, we ensure every
+                guest receives love, attention, and comfort. Rest easy knowing
+                your cat is in caring hands at NekoInn.
+              </p>
+              <div class="line--horizontal"></div>
+            </li>
+
+            <li class="rooms__text-list-element">
+              <button class="rooms__text-list-element-button">
+                <img
+                  class="rooms__text-list-element-button-image--down"
+                  src="./assets/rooms__button-down.svg"
+                />
+              </button>
+              <h5>Palatial Purrfections: Opulence for Discerning Cats</h5>
+              <p class="rooms__text hidden">
+                Experience luxury like never before, tailored exclusively for
+                your feline companions. Plush bedding, gourmet meals, and
+                unparalleled comfort await in our opulent suites.
+              </p>
+              <div class="line--horizontal"></div>
+            </li>
+
+            <li class="rooms__text-list-element">
+              <button class="rooms__text-list-element-button">
+                <img
+                  class="rooms__text-list-element-button-image--down"
+                  src="./assets/rooms__button-down.svg"
+                />
+              </button>
+              <h5>Tailored Tranquility: Personalized Care for Every Cat</h5>
+              <p class="rooms__text hidden">
+                Every cat is unique, and so is our care. Tailored services and
+                personalized attention ensure your furry friend is comfortable
+                and content during their stay.
+              </p>
+              <div class="line--horizontal"></div>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="purr-care">
+        <div class="purr-care__primary-block">
+          <h6>DEDICATED CARE FOR EVERY PURRSONALITY</h6>
+          <h3>Purr Care</h3>
+          <p>
+            Experience top-notch feline care with our Purr Care services. From
+            grooming to playtime, we provclasse personalized attention to ensure
+            your cat's happiness and well-being at NekoInn.
+          </p>
+          <button
+            class="purr-care__primary-block-button"
+            onclick="document.querySelector('.booking').scrollIntoView()"
+          >
+            <img src="./assets/purr-care__primary-block-button-arrow.svg" />
+            BOOK NOW
+          </button>
+        </div>
+
+        <ul class="purr-care__secondary-blocks-list">
+          <li class="purr-care__secondary-block">
+            <div class="purr-care__secondary-block-image-wrapper">
+            <img
+              class="purr-care__secondary-block-image"
+              src="./assets/purr-care__secondary-block-image--1.png"
+            />
+            </div>
+            <h4>Grooming Spa:</h4>
+            <p>
+              Indulge your cat in a pampering experience at our Grooming Spa.
+              Our skilled groomers provclasse gentle care and attention, from
+              luxurious baths to expert grooming sessions, leaving your cat
+              looking and feeling their best.
+            </p>
+          </li>
+
+          <li class="line--vertical"></li>
+
+          <li class="purr-care__secondary-block">
+            <div class="purr-care__secondary-block-image-wrapper">
+            <img
+              class="purr-care__secondary-block-image"
+              src="./assets/purr-care__secondary-block-image--2.png"
+            />
+          </div>
+            <h4>Playtime Paradise:</h4>
+            <p>
+              Let your cat unleash their playful sclasse in our Playtime Paradise.
+              With a variety of engaging toys, climbing structures, and
+              interactive games, our supervised play sessions offer the perfect
+              opportunity for your cat to exercise, socialize, and have fun.
+            </p>
+          </li>
+
+          <div class="line--vertical"></div>
+
+          <li class="purr-care__secondary-block">
+            <div class="purr-care__secondary-block-image-wrapper">
+            <img
+              class="purr-care__secondary-block-image"
+              src="./assets/purr-care__secondary-block-image--3.png"
+            />
+            </div>
+            <h4>Gourmet Dining:</h4>
+            <p>
+              Treat your cat's taste buds to a culinary delight with our Gourmet
+              Dining service. From premium cat cuisine to customized meal plans
+              tailored to their dietary needs, our gourmet chefs ensure that
+              every meal is both delicious and nutritious.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="carousel">
+        <ul class="carousel__track">
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--1.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--2.png" />
+          </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--3.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--4.png" />
+          </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--5.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--6.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--1.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--2.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--3.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--4.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--5.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+          <li class="carousel__track-item">
+            <div class="carousel__track-item-img-wrapper">
+            <img src="./assets/carousel__track-item-image--6.png" />
+            </div>
+            <button
+              class="carousel__track-item-button"
+              onclick="window.location.href='http://example.com'"
+            >
+              <img src="./assets/carousel__track-item-button-image.svg" />
+            </button>
+          </li>
+        </ul>
+      </div>
+
+      <div class="pricing">
+        <div class="pricing__header">
+          <h6>TRANSPARENT RATES FOR YOUR PURRY COMPANION</h6>
+          <h2>Pricing</h2>
+          <p>
+            In our Pricing div, transparency meets affordability. At
+            NekoInn, we believe in straightforward pricing, ensuring you have
+            peace of mind knowing exactly what to expect.
+          </p>
+        </div>
+
+        <div class="pricing__cards">
+          <div class="pricing__card">
+            <div class="pricing__card-title">
+              <span>PURR DUCAL</span>
+              <img src="./assets/pricing__card-icon--purr-ducal.svg" />
+            </div>
+
+            <div class="pricing__card-cost">
+              <h2>$160.99</h2>
+              <p>PER DAY</p>
+            </div>
+
+            <ul class="pricing__card-benefits-list">
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Standard Room Accommodation</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Basic Grooming</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Group Playtime</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Standard Meal Plan</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Daily Wellness Check</p>
+              </li>
+            </ul>
+
+            <button
+              class="pricing__card-button"
+              onclick="document.querySelector('.booking').scrollIntoView()"
+            >
+              BOOK NOW
+            </button>
+          </div>
+
+          <div class="pricing__card pricing__card--imperial">
+            <div class="pricing__card-title">
+              <span>PURR IMPERIAL</span>
+              <img src="./assets/pricing__card-icon--purr-imperial.svg" />
+            </div>
+
+            <div class="pricing__card-cost">
+              <h2>$600.99</h2>
+              <p>PER DAY</p>
+            </div>
+
+            <ul class="pricing__card-benefits-list">
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Presclassential Suite Accommodation</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Deluxe Spa Grooming Package</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Exclusive One-on-One Playtime</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Gourmet Meal Plan</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>24/7 Concierge Service</p>
+              </li>
+            </ul>
+
+            <button
+              class="pricing__card-button pricing__card-button--imperial"
+              onclick="document.querySelector('.booking').scrollIntoView()"
+            >
+              BOOK NOW
+            </button>
+          </div>
+
+          <div class="pricing__card">
+            <div class="pricing__card-title">
+              <span>PURR ROYAL</span>
+              <img src="./assets/pricing__card-icon--purr-royal.svg" />
+            </div>
+
+            <div class="pricing__card-cost">
+              <h2>$299.99</h2>
+              <p>PER DAY</p>
+            </div>
+
+            <ul class="pricing__card-benefits-list">
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Luxury Suite Accommodation</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Deluxe Grooming Package</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Private Playtime</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>Premium Meal Plan</p>
+              </li>
+              <li class="pricing__card-benefit">
+                <img src="./assets/benefit-icon--night.svg" />
+                <p>VIP Wellness Check</p>
+              </li>
+            </ul>
+
+            <button
+              class="pricing__card-button"
+              onclick="document.querySelector('.booking').scrollIntoView()"
+            >
+              BOOK NOW
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="testimonial">
+        <div class="testimonial__header">
+          <h6>PAWSITIVE REVIEWS FROM HAPPY CUSTOMERS</h6>
+          <h2>They Celebrate NekoInn</h2>
+          <p>
+            Discover what our clients have to say about their experiences at
+            NekoInn. Their testimonials speak volumes about the exceptional care
+            and service we provide for their beloved feline companions.
+          </p>
+        </div>
+
+        <div class="testimonial-container">
+          <button class="btn btn-left">
+            <img src="./assets/testimonial__arrow-left.svg" />
+          </button>
+          <ul class="testimonial__cards-list">
+            <li class="testimonial__card-list-element">
+              <img src="./assets/testimonial__icon.svg" />
+              <p>
+                Leaving my cat at NekoInn was the best decision I ever made. The
+                staff went above and beyond to ensure that my furry friend felt
+                loved and cared for. I received regular updates and photos,
+                which put my mind at ease during my time away. Thank you,
+                NekoInn, for providing such a wonderful home away from home for
+                my cat!
+              </p>
+              <div class="reviewer-info">
+                <img src="./assets/testimonial__review-person-image--1.png" />
+                <span>Emily S</span>
+              </div>
+            </li>
+
+            <li class="testimonial__card-list-element">
+              <img src="./assets/testimonial__icon.svg" />
+              <p>
+                I cannot recommend NekoInn enough! From the moment I walked in,
+                I knew my cat would be in good hands. The facilities are clean
+                and spacious, and the staff is incredibly friendly and
+                attentive. My cat came back home relaxed and happy, and I will
+                definitely be using NekoInn for all my future boarding needs.
+              </p>
+              <div class="reviewer-info">
+                <img src="./assets/testimonial__review-person-image--2.png" />
+                <span>Mark T</span>
+              </div>
+            </li>
+
+            <li class="testimonial__card-list-element">
+              <img src="./assets/testimonial__icon.svg" />
+              <p>
+                NekoInn made the experience so much easier. Their personalized
+                care and attention to detail set them apart from other boarding
+                facilities. I loved receiving updates and photos of my cat
+                enjoying her stay. I have complete peace of mind knowing she's
+                in the care of such dedicated professionals. Thank you, NekoInn!
+              </p>
+              <div class="reviewer-info">
+                <img src="./assets/testimonial__review-person-image--3.png" />
+                <span>Emily S</span>
+              </div>
+            </li>
+            <li class="testimonial__card-list-element">
+              <img src="./assets/testimonial__icon.svg" />
+              <p>
+                Leaving my cat at NekoInn was the best decision I ever made. The
+                staff went above and beyond to ensure that my furry friend felt
+                loved and cared for. I received regular updates and photos,
+                which put my mind at ease during my time away. Thank you,
+                NekoInn, for providing such a wonderful home away from home for
+                my cat!
+              </p>
+              <div class="reviewer-info">
+                <img src="./assets/testimonial__review-person-image--1.png" />
+                <span>Emily S</span>
+              </div>
+            </li>
+
+            <li class="testimonial__card-list-element">
+              <img src="./assets/testimonial__icon.svg" />
+              <p>
+                I cannot recommend NekoInn enough! From the moment I walked in,
+                I knew my cat would be in good hands. The facilities are clean
+                and spacious, and the staff is incredibly friendly and
+                attentive. My cat came back home relaxed and happy, and I will
+                definitely be using NekoInn for all my future boarding needs.
+              </p>
+              <div class="reviewer-info">
+                <img src="./assets/testimonial__review-person-image--2.png" />
+                <span>Mark T</span>
+              </div>
+            </li>
+
+            <li class="testimonial__card-list-element">
+              <img src="./assets/testimonial__icon.svg" />
+              <p>
+                NekoInn made the experience so much easier. Their personalized
+                care and attention to detail set them apart from other boarding
+                facilities. I loved receiving updates and photos of my cat
+                enjoying her stay. I have complete peace of mind knowing she's
+                in the care of such dedicated professionals. Thank you, NekoInn!
+              </p>
+              <div class="reviewer-info">
+                <img src="./assets/testimonial__review-person-image--3.png" />
+                <span>Emily S</span>
+              </div>
+            </li>
+          </ul>
+          <button class="btn btn-right">
+            <img src="./assets/testimonial__arrow-right.svg" />
+          </button>
+        </div>
+      </div>
+
+      <div class="booking">
+        <div class="booking__header">
+          <h6>SECURE YOUR CAT'S STAY TODAY</h6>
+          <h2>Book Now</h2>
+          <p>
+            Ready to reserve your cat's spot at NekoInn? Our easy-to-use booking
+            system makes it simple to schedule your cat's stay with us. Just
+            select your desired dates, choose from our range of accommodations
+            and services, and complete your reservation in a few easy steps.
+          </p>
+        </div>
+
+        <form class="booking__form">
+          <div class="booking__form-cell">
+            <label for="booking__full-name">FULL NAME</label>
+            <input
+              type="text"
+              id="booking__full-name"
+              name="full-name"
+              placeholder="Eg. Jane Doe"
+              required
+            />
+          </div>
+          <div class="booking__form-cell">
+            <label for="booking__email">EMAIL</label>
+            <input
+              type="email"
+              id="booking__email"
+              name="email"
+              placeholder="Eg.janedoe@gmail.com"
+              required
+            />
+          </div>
+          <div class="booking__form-cell">
+            <label for="booking__phone">PHONE NUMBER</label>
+            <input
+              type="tel"
+              id="booking__phone"
+              name="phone"
+              placeholder="100-616-6060"
+              required
+            />
+          </div>
+          <div class="booking__form-cell">
+            <label for="booking__cat-name">CAT NAME</label>
+            <input
+              type="text"
+              id="booking__cat-name"
+              name="cat-name"
+              placeholder="Eg. Timothy"
+              required
+            />
+          </div>
+          <div class="booking__form-cell full-width-cell">
+            <label for="booking__date">PICK A DATE</label>
+            <input
+                type="datetime-local"
+                id="booking__date"
+                name="date"
+                class="custom-date-input"
+                data-placeholder="Select a Date"
+              />  
+              <button type="button" class="custom-calendar-button">
+                <img src="./assets/booking__calendar-icon.svg" />
+              </button>  
+          </div>
+          <div class="booking__form-cell full-width-cell">
+            <label for="booking__number-of-pets">HOW MANY PETS?</label>
+            <input
+              type="number"
+              id="booking__number-of-pets"
+              name="number-of-pets"
+              placeholder="6"
+            />
+          </div>
+          <div class="booking__form-cell full-width-cell custom-select-wrapper">
+            <label for="booking__plan">PURR PLAN</label>
+            <select
+              id="booking__plan"
+              name="plan"
+              class="booking__custom-select"
+            >
+              <option value="" disabled selected>Select Purr Plan</option>
+              <option value="ducal">Purr Ducal</option>
+              <option value="royal">Purr Royal</option>
+              <option value="imperial">Purr Imperial</option>
+            </select>
+          </div>
+
+          <button class="booking__button" type="submit">BOOK NOW</button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-newsletter">
+        <a class="footer__logo" href="index.html">
+          <img
+            class="footer__logo-img"
+            alt="footer-logo"
+            src="./assets/footer__logo--night.svg"
+          />
+        </a>
+        <form class="footer__form-cell">
+          <label for="footer-email">EMAIL</label>
+          <input
+            type="email"
+            id="footer-email"
+            name="email"
+            placeholder="Eg.janedoe@gmail.com"
+            required
+          />
+          <button type="submit">
+            <img src="./assets/footer__newletter-email-button.svg"/>
+          </button>
+        </form>
+      </div>
+
+      <div class="line--horizontal"></div>
+
+      <div class="footer-info">
+        <ul class="footer-item footer__visit-item">
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-item__visit-icon.svg"
+          />
+          <h5>Pay Us A Visit</h5>
+          <address>
+            123 Meow Avenue<br />Kittyville, CA 90210<br />United State
+          </address>
+        </ul>
+        <ul class="footer-item footer__call-item">
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-item__call-icon.svg"
+          />
+          <h5>Give Us A Call</h5>
+          <p>(555) 555-5555</p>
+        </ul>
+        <ul class="footer-item footer__message-item">
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-item__message-icon.svg"
+          />
+          <h5>Send Us A Message</h5>
+          <p>info@neko-inn.com</p>
+        </ul>
+
+        <div class="footer-links">
+          <h5>NekoInn Plans</h5>
+          <ul>
+            <li onclick="document.querySelector('.pricing').scrollIntoView()">Purr Ducal</a></li>
+            <li onclick="document.querySelector('.pricing').scrollIntoView()">Purr Royal</li>
+            <li onclick="document.querySelector('.pricing').scrollIntoView()">Purr Imperial</li>
+          </ul>
+        </div>
+
+        <div class="footer-social">
+          <h5>Socialize With NekoInn</h5>
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-social__facebook-icon.svg"
+            onclick="window.location.href='http://example.com'"
+          />
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-social__X-Twitter-icon.svg"
+            onclick="window.location.href='http://example.com'"
+          />
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-social__linkedin-icon.svg"
+            onclick="window.location.href='http://example.com'"
+          />
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-social__youtube-icon.svg"
+            onclick="window.location.href='http://example.com'"
+          />
+          <img
+            class="rooms__text-list-element-button-image--up"
+            src="./assets/footer-social__instagram-icon.svg"
+            onclick="window.location.href='http://example.com'"
+          />
+        </div>
+        <div class="line--horizontal"></div>
+        <p>2024 © COPYRIGHT - NEKOINN A 5 STAR PURR HOTEL</p>
+      </div>
+    </footer>
+  </body>
+</html>

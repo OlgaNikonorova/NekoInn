@@ -1,0 +1,28 @@
+:root {
+  --theme-toggle-transition: 0.3s;
+  --theme-slider-width: 60px;
+  --theme-toggle-icon-size: 25px;
+  --theme-switch-width: 110px;
+}
+
+#navigation__theme-checkbox:hover
+  + .navigation__theme-slider-wrapper
+  .navigation__theme-slider {
+  filter: brightness(0.9);
+}
+
+#navigation__theme-checkbox:checked
+  + .navigation__theme-slider-wrapper
+  .navigation__theme-slider {
+  transform: translateX(
+    calc(var(--theme-switch-width) - var(--theme-slider-width))
+  );
+}
+
+.navigation__theme-toggle-icon {
+  transition: stroke var(--theme-toggle-transition);
+}
+
+.navigation__theme-slider {
+  transition: transform var(--theme-toggle-transition);
+}

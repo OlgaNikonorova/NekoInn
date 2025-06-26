@@ -1,0 +1,67 @@
+:root[theme="night"] {
+  --main-text-color: #ffffff;
+  --background-color: #1d1d1d;
+
+  --section-background-color: var(--section-background-color-night);
+  --nav-section-background-color: #161616;
+  --border-color: var(--border-color-night);
+}
+
+:root[theme="day"] {
+  --main-text-color: #232323;
+  --background-color: #fbf5f8;
+
+  --section-background-color: #ffffff;
+  --nav-section-background-color: linear-gradient(to right, #ffffff, #f6dde9);
+  --border-color: #b7b7b7;
+}
+
+:root {
+  --main-color: #c75e90;
+  --secondary-color: #8e345f;
+
+  --main-text-color-night: #ffffff;
+  --main-text-color-day: #232323;
+  --section-background-color-night: #161616;
+
+  --additional-headers-text-color: #696969;
+  --additional-headers-text-color-dark: #181818;
+
+  --border-color-night: #ffffff;
+  --line-color: rgba(128, 128, 128, 0.13);
+
+  --hover-color: #8e345f;
+  --hover-color-secondary: #b91966;
+}
+
+button {
+  color: var(--main-text-color-night);
+}
+
+h1 {
+  color: var(--main-text-color);
+}
+
+h3 {
+  color: var(--main-text-color);
+}
+
+h4 {
+  color: var(--main-text-color);
+}
+
+h5 {
+  color: var(--main-text-color);
+}
+
+h6 {
+  color: var(--additional-headers-text-color);
+}
+
+p {
+  color: var(--main-text-color);
+}
+
+label {
+  color: var(--additional-headers-text-color);
+}

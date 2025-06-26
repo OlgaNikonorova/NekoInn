@@ -1,0 +1,111 @@
+:root {
+  --unique-carousel-items-count: 6;
+  --carousel-items-width: 15vw;
+  --carousel-gap: 1vw;
+}
+
+.carousel {
+  margin: 8vh 0;
+  padding-bottom: 4vh;
+  overflow-x: hidden;
+  overflow-y: visible;
+  position: relative;
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .carousel__track {
+    display: flex;
+    gap: var(--carousel-gap);
+    animation: scroll 20s linear infinite;
+    animation-play-state: running;
+    width: calc(
+      var(--carousel-items-width) * 2 * var(--unique-carousel-items-count) +
+        var(--carousel-gap) * (2 * var(--unique-carousel-items-count) - 1)
+    );
+
+    &:hover {
+      animation-play-state: paused;
+    }
+
+    .carousel__track-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: var(--carousel-items-width);
+      position: relative;
+
+      .carousel__track-item-img-wrapper {
+        border-radius: 1rem;
+        width: 100%;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        > img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+
+          &:hover {
+            filter: brightness(0.9);
+          }
+        }
+      }
+
+      .carousel__track-item-button {
+        position: absolute;
+        bottom: 0;
+        right: 20%;
+        padding: 0;
+        width: 30%;
+        height: fit-content;
+        aspect-ratio: 1 / 1;
+        transform: translateY(50%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        > img {
+          width: 60%;
+          height: 60%;
+        }
+      }
+    }
+  }
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(
+      calc(
+        var(--unique-carousel-items-count) * var(--carousel-items-width) * -1 -
+          var(--carousel-gap) * var(--unique-carousel-items-count)
+      )
+    );
+  }
+}
+
+@media (max-width: 1000px) {
+  .carousel {
+    padding-bottom: 22vh;
+  }
+
+  :root {
+    --carousel-items-width: 80vw;
+    --carousel-items-gap: 3vw;
+  }
+}

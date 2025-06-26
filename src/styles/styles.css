@@ -1,0 +1,105 @@
+@import "./theme/colors.css";
+@import "./theme/typography.css";
+
+@import "./navigation.css";
+@import "./hero.css";
+@import "./info.css";
+@import "./about.css";
+@import "./rooms.css";
+@import "./purr-care.css";
+@import "./carousel.css";
+@import "./pricing.css";
+@import "./booking.css";
+@import "./testimonial.css";
+@import "./footer.css";
+@import "./transition/theme-toggle.css";
+@import "./components.css";
+
+@media (max-width: 1000px) {
+  :root {
+    --button-height: 55px;
+  }
+}
+
+html,
+body {
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+:root {
+  --button-height: 45px;
+  --default-block-padding: 2vh 4vw;
+  --blocks-horizontal-margin: 4vw;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+body {
+  background-color: var(--background-color);
+  overflow-x: hidden;
+}
+
+img {
+  transition: opacity 0.5s ease;
+}
+
+input {
+  all: unset;
+
+  &::placeholder {
+    font-size: var(--other-font-size);
+  }
+
+  &:focus::placeholder {
+    color: transparent;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  appearance: none;
+}
+
+input[type="datetime-local"]::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+select {
+  all: unset;
+}
+
+.vector-circle {
+  position: absolute;
+}
+
+.primary-image {
+  position: relative;
+  z-index: 1;
+}
+
+.secondary-image {
+  z-index: 0;
+}
+
+select {
+  cursor: pointer;
+}
+
+li {
+  list-style-type: none;
+}
+
+#main {
+  padding: 0 var(--blocks-horizontal-margin);
+}
